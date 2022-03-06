@@ -16,11 +16,11 @@ document.querySelectorAll('code').forEach((code) => {
 
     function initializeEdit() {
       const rect = code.getBoundingClientRect();
-      console.log('dblclick', event.target, { event, rect });
+      const originalContent = code.textContent;
+      //console.log('dblclick', event.target, { event, rect });
       const container = document.createElement('div');
       const textarea = (() => {
         const textarea = document.createElement('textarea');
-        const originalContent = code.textContent;
         textarea.value = originalContent;
         textarea.setAttribute(
           'style',
