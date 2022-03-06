@@ -58,11 +58,15 @@ aside {
 }
 
 .categories {
-  flex: 0 4 25%;
+  flex: 0 4 17%;
+}
+
+.languages {
+  flex: 1 1 25%;
 }
 
 .styles {
-  flex: 1 1 50%;
+  flex: 1 1 33%;
 }
 
 aside ul,
@@ -115,7 +119,7 @@ aside ul a:hover {
 }
 
 aside ul a.current:before {
-  content: "▶";
+  content: '▶';
   font-size: smaller;
   position: absolute;
   left: 0;
@@ -129,6 +133,7 @@ main {
 
 main > div {
   margin: 2.5em 0 3em;
+  position: relative;
 }
 
 .hidden {
